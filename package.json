@@ -1,0 +1,11 @@
+{
+  "name": "dcparser",
+  "version": "1.0.0",
+  "description": "Emscripten bindings for Panda3D's DC file reader and packer. ",
+  "main": "dcparser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Little Cat",
+  "license": "BSD-3-Clause"
+}
