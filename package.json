@@ -1,6 +1,6 @@
 {
   "name": "dcparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emscripten bindings for Panda3D's DC file reader and packer. ",
   "main": "dcparser.js",
   "scripts": {
