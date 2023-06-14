@@ -154,11 +154,13 @@ Module['packField'] = (dcField, elements) => {
     if (!dcPacker.endPack()) {
       throw new Error("Unknown error");
     }
+    const vectorData = dcPacker.data;
     if (ENVIRONMENT_IS_NODE) {
-      data = Module.vectorToBuffer(dcPacker.data)
+      data = Module.vectorToBuffer(vectorData)
     } else {
-      data = Module.vectorToUint8Array(dcPacker.data);
+      data = Module.vectorToUint8Array(vectorData);
     }
+    vectorData.delete();
   } catch (error) {
     console.log(`Error has occured when attempting to pack field "${dcField.name}": ${error}`);
     data = error;
